@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "UtilsLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/UtilsLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UtilsLibrary.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "UtilsLibrary/1.0.0": {
-      "type": "project",
-      "path": "../UtilsLibrary/UtilsLibrary.csproj",
-      "msbuildProject": "../UtilsLibrary/UtilsLibrary.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "UtilsLibrary >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\Sahil\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\Homework-15\\Homework-15.csproj",
-      "projectName": "Homework-15",
-      "projectPath": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\Homework-15\\Homework-15.csproj",
+      "projectUniqueName": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\UtilsLibrary\\UtilsLibrary.csproj",
+      "projectName": "UtilsLibrary",
+      "projectPath": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\UtilsLibrary\\UtilsLibrary.csproj",
       "packagesPath": "C:\\Users\\Sahil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\Homework-15\\obj\\",
+      "outputPath": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\UtilsLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,11 +38,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\UtilsLibrary\\UtilsLibrary.csproj": {
-              "projectPath": "C:\\Users\\Sahil\\Desktop\\Classroom1\\classroom-15\\Homework-15\\UtilsLibrary\\UtilsLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

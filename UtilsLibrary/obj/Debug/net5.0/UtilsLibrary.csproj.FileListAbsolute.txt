@@ -1,0 +1,12 @@
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\bin\Debug\net5.0\UtilsLibrary.deps.json
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\bin\Debug\net5.0\UtilsLibrary.dll
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\bin\Debug\net5.0\ref\UtilsLibrary.dll
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\bin\Debug\net5.0\UtilsLibrary.pdb
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.csproj.AssemblyReference.cache
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.AssemblyInfoInputs.cache
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.AssemblyInfo.cs
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.dll
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\ref\UtilsLibrary.dll
+C:\Users\Sahil\Desktop\Classroom1\classroom-15\Homework-15\UtilsLibrary\obj\Debug\net5.0\UtilsLibrary.pdb

@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Homework-15/1.0.0": {
-        "dependencies": {
-          "UtilsLibrary": "1.0.0"
-        },
-        "runtime": {
-          "Homework-15.dll": {}
-        }
-      },
       "UtilsLibrary/1.0.0": {
         "runtime": {
           "UtilsLibrary.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Homework-15/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "UtilsLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
