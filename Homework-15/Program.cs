@@ -1,18 +1,34 @@
-﻿using System;
+﻿using Homework_15.Enums;
+using System;
 
 namespace Homework_15
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
-            Book book = new Book("dsf", "elesdfsstan", 433);
-            Book book1 = new Book("sevgi", "sdf", 343);
-            Book book2 = new Book("aaaaaaaa", "elsdfestan", 433);
-            Book book3;
-           // Console.WriteLine(book.ID);
-            Library library = new Library();
+            Console.WriteLine("Username daxil edin");
+            string username = Console.ReadLine();
+            Console.WriteLine("Emailinizi daxil edin");
+            string email = Console.ReadLine();
+            string roll;
+            do
+            {
+                Console.WriteLine("Role daxil edin Admin veya member kimi qeyd ola bilersiz");
+                roll = Console.ReadLine();
+            } while (roll!="admin"&&roll!="member");
+                
+                Role role = (Role)Enum.Parse(typeof(Role), roll, ignoreCase: true);
+                User user = new User(username, email, role);
+
             
+            
+           
+
+
+            Library library = new Library();
+          
             while (true)
             {
                 Console.WriteLine("     Menyu   \n" +
@@ -22,44 +38,69 @@ namespace Homework_15
                     "4: Delete book by id \n" +
                     "5: Edit book name \n" +
                     "6: Filter by page count \n" +
-                    "7: Quit" );
+                    "0: Quit" );
                 int num = Convert.ToInt32(Console.ReadLine());
                 if (num == 1)
                 {
-                    //Console.WriteLine("Kitabin adin yazin");
-                    //string name = Console.ReadLine();
-                    //Console.WriteLine("Muellifin adin yazin");
-                    //string authorname = Console.ReadLine();
-                    //Console.WriteLine("Sehife sayisin yazin");
-                    //int pagecount = Convert.ToInt32(Console.ReadLine());
+                    if(user.Role == Role.admin)
+                    {
+                        Console.WriteLine("Elave etmek istediyiniz Kitabin adin yazin");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("Muellifin adin yazin");
+                        string authorname = Console.ReadLine();
+                        Console.WriteLine("Sehife sayisin yazin");
+                        int pagecount = Convert.ToInt32(Console.ReadLine());
 
-                    library.AddBook(book);
-                    library.AddBook(book1);
-                    library.AddBook(book2);
+                        library.AddBook(new Book(name, authorname, pagecount));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Xeta: Siz Admin deyilsiniz");
+                    }
+                    
+                    
                 }
                 else if (num == 2)
                 {
                     Console.WriteLine("Tapmaq istediyiniz kitabin ID-sini yazin");
                     int bookID = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("*************");
                     library.GetBookById(bookID);
                 }
                 else if (num == 3)
                 {
-                    
+                    library.GetAllBooks();
 
                 }
                 else if (num == 4)
                 {
-                    Console.WriteLine("Silmek istediyiniz Kitabin ID-sini yazin");
-                    int DeletId = Convert.ToInt32(Console.ReadLine());
-                    library.DeleteBookById(DeletId);
+                    
+                    if (user.Role==Role.admin)
+                    {
+                        Console.WriteLine("Silmek istediyiniz Kitabin ID-sini yazin");
+                        int DeletId = Convert.ToInt32(Console.ReadLine());
+                        library.DeleteBookById(DeletId);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Xeta: Siz Admin deyilsiniz");
+                    }
+                    
 
                 }
                 else if (num == 5)
                 {
-                    Console.WriteLine("Adini deyishmek istediyiniz Kitabin ID-sini yazin");
-                    int EditID = Convert.ToInt32(Console.ReadLine());
-                    library.EditBookName(EditID);
+                    if (user.Role == Role.admin)
+                    {
+                        Console.WriteLine("Adini deyishmek istediyiniz Kitabin ID-sini yazin");
+                        int EditID = Convert.ToInt32(Console.ReadLine());
+                        library.EditBookName(EditID);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Xeta: Siz Admin deyilsiniz");
+                    }
+                   
                 }
                 else if (num == 6)
                 {
@@ -88,11 +129,7 @@ namespace Homework_15
             }
 
 
-
-
-           
-
-
         }
+        
     }
 }

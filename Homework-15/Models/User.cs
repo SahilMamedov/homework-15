@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Homework_15.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace Homework_15
 {
-    class User //: IEntity
+    class User : IEntity
     {
-       // public int ID { get; }
+        public int ID { get; }
         public string UserName { get; set; }
         public string Email { get; set; }
-
-        public User(string username, string email)
+        public Role Role { get; set; }
+        public User(string username, string email,Role role)
         {
             UserName = username;
             Email = email;
-           // ID++;
+            Role = role;
+           
         }
         public void ShowInfo()
         {

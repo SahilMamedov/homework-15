@@ -10,13 +10,13 @@ namespace Homework_15
     {
 
 
-       // public int ID { get; }
-       // private static int id { get; set; }
+        public int ID { get; }
+        private static int id { get; set; }
         public string Name { get; set; }
         public string AuthorName { get; set; }
         public int PageCount { get; set; }
-        public int ID { get; set; }
-        public  int id { get; set; }
+       // public int ID { get; set; }
+       // public  int id { get; set; }
 
          
 
@@ -28,12 +28,17 @@ namespace Homework_15
             AuthorName = aurhorName;
             PageCount = pageCount;
             ID++;
-          
+            id += ID;
+            ID = id;
         }
         public void ShowInfo()
         {
-            Console.WriteLine($"ID:  \n" +
-                $"Name: {Name} AuthorName: {AuthorName} PageCount: {PageCount}");
+            Console.WriteLine($"ID: {ID} \n" +
+                $"Name: {Name} \n" +
+                $"AuthorName: {AuthorName} \n" +
+                $"PageCount: {PageCount} \n" +
+                $"Isdelet: {IsDeleted}");
+            Console.WriteLine("--------------");
         }
 
 

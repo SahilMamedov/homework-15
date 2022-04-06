@@ -4,11 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework_15
+namespace Homework_15.Enums
 {
-    interface IEntity
-    {
-
-         int ID { get;  }
-    }
+    enum Role {admin=1,member }
+    
 }
